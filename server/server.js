@@ -17,7 +17,11 @@ const io = new Server(server, {
   }
 });
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://chat-sentiment-app-backend-13xoe2jg6-rohit-badekars-projects.vercel.app'],
+  credentials: true
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI, {
