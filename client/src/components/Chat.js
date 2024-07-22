@@ -6,10 +6,9 @@ import SendIcon from '@mui/icons-material/Send';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import { Picker } from 'emoji-mart';
-// import 'emoji-mart/css/emoji-mart.css';
 import moment from 'moment';
 
-const socket = io('http://localhost:5000', {
+const socket = io(process.env.REACT_APP_API_URL, {
   auth: {
     token: localStorage.getItem('token')
   }

@@ -12,16 +12,14 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST"]
+    origin: ['http://localhost:3000', 'https://chat-sentiment-app-frontend-dt8xniu6p-rohit-badekars-projects.vercel.app'],
+    methods: ["GET", "POST"],
+    credentials: true
+    
   }
 });
 
-// app.use(cors());
-app.use(cors({
-  origin: ['http://localhost:3000', 'https://chat-sentiment-app-backend-13xoe2jg6-rohit-badekars-projects.vercel.app'],
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI, {
