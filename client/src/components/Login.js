@@ -7,11 +7,12 @@ function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  const API_URL = process.env.REACT_APP_API_URL || '';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/login', { username, password });
+      const response = await axios.post(`${API_URL}/login`, { username, password });
       localStorage.setItem('token', response.data.token);
       navigate('/chat');
     } catch (error) {
