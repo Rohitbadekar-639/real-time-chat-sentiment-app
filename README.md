@@ -48,7 +48,7 @@ This project is a full-stack, real-time chat application built with the MERN sta
 
 1. Clone the repository
 
-git clone https://github.com/your-username/advanced-chat-app.git
+git clone https://github.com/Rohitbadekar-639/real-time-chat-sentiment-app
 cd advanced-chat-app
 
 2. Install server dependencies
@@ -93,8 +93,4 @@ npm start
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-Project Link: [https://github.com/your-username/advanced-chat-app](https://github.com/Rohitbadekar-639/real-time-chat-sentiment-app)
+Project Link: https://github.com/Rohitbadekar-639/real-time-chat-sentiment-app
